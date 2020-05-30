@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders</title>
+</head>
+<body>
+    <form name="f1" action="orders_view" method="POST">
+        {% csrf_token %}
+        <h1>Order Details</h1>
+        Enter Order ID:<input type="number" name="oid"><br>
+        Enter Customer ID:<input type="number" name="cid"><br>
+        Enter Total Amount:<input type="number" name="amt"><br>
+
+        <h1>Customers Details Details</h1>
+        Enter Customer ID:<input type="number" name="cust_id"><br>
+        Enter Customer Name:<input type="text" name="cust_name"><br>
+        Enter Location:<input type="text" name="cust_loc"><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

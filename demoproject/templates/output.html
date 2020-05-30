@@ -1,0 +1,23 @@
+<H2>Orders</H2>
+<table border="1">
+    <tr><th>Order ID</th><th>Customer ID</th><th>Total Ammount</th></tr>
+    {% for items in order %}
+        <tr><td>{{items.order_id}}</td><td>{{items.customer_id}}</td><td>{{items.price}}</td></tr>
+    {% endfor %}
+</table>
+    
+<h2>Customers</h2>
+<table border="1">
+    <tr><th>Customer ID</th><th>Customer Name</th><th>Location</th></tr>
+    {% for items in customer %}
+        <tr><td>{{items.customer_id}}</td><td>{{items.customer_name}}</td><td>{{items.customer_loc}}</td></tr>
+    {% endfor %}
+</table>
+
+<h2>After Join</h2>
+<table border="1">
+    <tr><th>Order ID,Customer name</th></tr>
+    {% for items in joindata %}
+        <tr><td>{{items}}</td></tr>
+    {% endfor %}
+</table>
